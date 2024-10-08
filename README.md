@@ -1,25 +1,23 @@
-# auto-commit-bot README
-
-This is the README for your extension "auto-commit-bot". After writing up a brief description, we recommend including the following sections.
+# Auto Commit
+   A VS Code extension that automatically commits changes to your Git repository at specified intervals, helping developers save their work effortlessly.
 
 ## Features
-- Automatically commit and push your entire directory to GitHub on a regular basis.
-- Define how often to commit and push with command line argument in minutes.
+   - Automatically commits changes at user-defined intervals.
+   - Logs commit information (date, time, commit hash) to a log file.
+   - Easy to start and stop via the command palette.
 
-## Requirements
+## Installation
+   1. Open the Extensions view (`Ctrl+Shift+X`).
+   2. Search for "Auto Commit".
+   3. Click "Install" on the extension page.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## Usage
+   1. Open a folder that is a Git repository.
+   2. Open the Command Palette (`Ctrl+Shift+P`).
+   3. Type "Start Auto-Commit" to begin automatic commits.
+   4. To stop, use the Command Palette again and select "Stop Auto-Commit".
 
-## Extension Settings
+## Configuration
+   You can configure the commit interval in minutes by adding the following to your settings:
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-
-**Enjoy!**
+   "auto-commit.interval": 5
